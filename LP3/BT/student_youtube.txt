@@ -31,5 +31,14 @@ contract StudentData{
         return studentArr.length;
     }
 
+    //fallback
+    fallback() external payable{
+        //This function will handle external function calls that is not there in our contract
+    }
+
+    receive() external payable{
+        //This function will the handle ether send by external user but without data mentioned
+    }
+
 
 }
